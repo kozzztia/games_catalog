@@ -1,3 +1,4 @@
+
 export interface InitialStoreTypesInterface {
     genres: genreInterface[],
     loading: boolean,
@@ -20,13 +21,14 @@ interface GetErrorActionTypesInterface {
     type : ActionsTypesEnum.GET_ERROR;
     payload : string | null;
 }
-interface genreInterface {
+interface genreInterface{
     games: [],
     games_count: number,
     id: number,
     image_background: string,
     name: string,
     slug: string,
+
 }
 
 export type AllActionTypes =ChangeLoaderValueActionTypesInterface | GetGenresActionTypesInterface | GetErrorActionTypesInterface

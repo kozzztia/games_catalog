@@ -1,14 +1,11 @@
 import {ActionsTypesEnum, AllActionTypes} from "../../types/types";
 import {Dispatch} from "react";
 import axios  from "axios";
+import {createUrl} from "../../support/supportFunction";
 
 
 
-const createUrl = (param: string) : string =>{
-    return  `https://api.rawg.io/api/${param}?key=3719d7855af54634ad3aa19763652ea2`
 
-
-}
 
 export const fetchGenres = ()=>{
     return async (dispatch : Dispatch<AllActionTypes>) =>{
